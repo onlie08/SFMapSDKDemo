@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="demo_title">SFMaps Demos</string>
+    <string name="list_item_title_basic_map">基本地图</string>
+    <string name="list_item_description_basic_map">介绍如何创建一个基本地图</string>
+    <string name="list_item_title_base_fragment_map">SupportMapFragment创建地图</string>
+    <string name="list_item_description_base_fragment_map">介绍SupportMapFragment方式创建地图</string>
+    <string name="list_item_title_camera_demo">Camera功能</string>
+    <string name="list_item_description_camera">介绍在地图中操作Camera各种功能</string>
+    <string name="list_item_title_events">Events功能</string>
+    <string name="list_item_description_events">介绍对地图的点击，长按，拖动地图事件功能</string>
+    <string name="list_item_title_poiclick">地图Poi点击功能</string>
+    <string name="list_item_description_poiclick">介绍地图底图poi点击事件和处理</string>
+    <string name="list_item_title_layers">Layers图层功能</string>
+    <string name="list_item_description_layers">介绍地图分别以正常、黑夜模式展示出</string>
+    <string name="list_item_title_location_mode_source">地图显示定位三种模式（使用高德定位）</string>
+    <string name="list_item_description_location_mode_source">介绍定位、追随、选择不同模式使用</string>
+    <string name="list_item_title_heatmap_demo">热力图功能</string>
+    <string name="list_item_description_heatmap">介绍在地图中如何绘制热力图</string>
+    <string name="list_item_title_geojson_demo">Geojson功能</string>
+    <string name="list_item_description_geojson">介绍在地图中如何绘制Geojson</string>
+    <string name="list_item_title_cluster_demo">聚合功能</string>
+    <string name="list_item_description_cluster">介绍在地图中如何绘制点聚合</string>
+    <string name="list_item_title_marker">Markers功能</string>
+    <string name="list_item_description_marker">介绍在地图上添加marker和infoWindow</string>
+    <string name="list_item_title_mapOption">MapOptions实现地图</string>
+    <string name="list_item_description_mapOption">介绍用MapOptions展示一个地图</string>
+    <string name="list_item_title_polygon">Polygons功能</string>
+    <string name="list_item_description_polygon">介绍在地图绘制多边形</string>
+    <string name="list_item_title_polyline">Polylines功能</string>
+    <string name="list_item_description_polyline">介绍在地图中绘制线条</string>
+    <string name="list_item_title_groundoverlay">GroundOverlay功能</string>
+    <string name="list_item_description_groundoverlay">介绍在地图中绘制GroundOverlay功能</string>
+    <string name="list_item_title_circle">Circles功能</string>
+    <string name="list_item_description_circle">介绍在地图中绘制圆形</string>
+    <string name="list_item_title_navigatearrow">NavigateArrow功能</string>
+    <string name="list_item_description_navigatearrow">介绍如何在地图中绘制导航指示箭头功能</string>
+    <string name="list_item_title_arc">Arc功能</string>
+    <string name="list_item_description_arc">介绍在地图中绘制弧形</string>
+    <string name="list_item_title_screenshot">地图截屏功能</string>
+    <string name="list_item_description_screenshot">介绍对地图进行截屏</string>
+    <string name="list_item_title_busline">Busline公交查询</string>
+    <string name="list_item_description_busline">介绍如何在地图中绘制BusLine</string>
+    <string name="list_item_title_route">Route路径规划</string>
+    <string name="list_item_description_route">介绍如何在地图中绘制Route</string>
+    <string name="list_item_title_opengl">Opengl接口功能</string>
+    <string name="list_item_description_opengl">介绍地图中开放Opengl接口功能</string>
+    <string name="list_item_title_uisettings">UI Settings功能</string>
+    <string name="list_item_description_uisettings">介绍地图中UI Settings功能</string>
+    <string name="list_item_title_geocoder">地理编码 功能</string>
+    <string name="list_item_description_geocoder">介绍 geocoder地理编码 功能</string>
+    <string name="list_item_title_poikeywordsearch">poi关键字搜索</string>
+    <string name="list_item_description_poikeywordsearch">介绍poi关键字搜索功能</string>
+    <string name="list_item_title_poiaroundsearch">poi周边搜索</string>
+    <string name="list_item_description_poiaroundsearch">介绍poi周边搜索功能</string>
+    <string name="list_item_title_localpoisearch_name">本地POI关键字搜索</string>
+    <string name="list_item_description_localpoisearch_name">介绍本地POI关键字搜索功能</string>
+    <string name="list_item_title_localpoisearch_letter">本地POI首字母搜索</string>
+    <string name="list_item_description_localpoisearch_letter">介绍本地POI首字母搜索功能</string>
+    <string name="list_item_title_offlinemap">离线地图功能</string>
+    <string name="list_item_description_offlinemap">介绍如何使用离线地图</string>
+    <string name="list_item_title_district">行政区划查询</string>
+    <string name="list_item_description_district">政区划查询功能演示</string>
+    <string name="list_item_title_district_boundary">行政区划边界查询</string>
+    <string name="list_item_description_district_boundary">政区划查询功能返回边界演示</string>
+    <string name="list_item_title_map_style">自定义地图样式</string>
+    <string name="list_item_description_map_style">自定义地图样式功能演示</string>
+    <string name="list_item_title_map_yingyan">鹰眼地图</string>
+    <string name="list_item_description_map_yingyan">设置鹰眼地图功能演示</string>
+    <string name="list_item_title_map_satellite">区域卫星影像</string>
+    <string name="list_item_description_map_satellite">区域卫星影像区域功能演示</string>
+    <string name="list_item_title_map_cloud">云存储</string>
+    <string name="list_item_description_map_cloud">介绍云存储功能</string>
+    <string name="list_item_title_map_cloudsearch">云检索</string>
+    <string name="list_item_description_map_cloudsearch">介绍云检索功能</string>
+    <string name="list_item_title_map_cloudsave">云存储</string>
+    <string name="list_item_description_map_cloudsave">介绍云存储功能</string>
+    <string name="list_item_navi_demo">导航展示</string>
+
+    <string name="marker_clear">Clear</string>
+    <string name="marker_reset_map">Reset</string>
+    <string name="marker_custom_info_contents">Custom info contents</string>
+    <string name="marker_custom_info_window">Custom info window</string>
+    <string name="marker_default_info_window">Default info window</string>
+
+    <string name="camera_down_arrow">下</string>
+    <string name="camera_left_arrow">左</string>
+    <string name="camera_right_arrow">右</string>
+    <string name="camera_up_arrow">上</string>
+    <string name="camera_move_the_camera">移动camera</string>
+    <string name="camera_stop_animation">停止</string>
+    <string name="camera_zoom_in">+</string>
+    <string name="camera_zoom_out">-</string>
+
+    <string name="location_gpsfollow">追随</string>
+    <string name="location_gpslocate">定位</string>
+    <string name="location_gpsrotate">旋转</string>
+
+    <string name="Layers_normal">Normal</string>
+    <string name="Layers_night_mode">Night</string>
+    <string name="Layers_navi_mode">Navi</string>
+    <string name="Layers_streetview">streetview</string>
+    <string name="Layers_satellite">Satellite</string>
+    <string name="Layers_traffic">Traffic</string>
+    <string name="uisetting_compass">指南针</string>
+
+
+    <string name="uisetting_touch_the_map">地图触摸事件</string>
+
+    <string name="uisetting_mylocation_layer">我的位置图层</string>
+
+    <string name="uisetting_rotate">旋转手势</string>
+    <string name="uisetting_scroll">滑动手势</string>
+    <string name="uisetting_tilt">倾斜手势</string>
+    <string name="uisetting_zoom_position">zoom显示及位置</string>
+    <string name="uisetting_zoom_buttons">显示</string>
+    <string name="uisetting_zoom_gestures">缩放手势</string>
+    <string name="uisetting_scale">比例尺</string>
+    <string name="uisetting_buttonScale">获取比例尺</string>
+    <string name="uisetting_logo_position">logo位置</string>
+    <string name="uisetting_bottom_left">左下</string>
+    <string name="uisetting_bottom_center">底部居中</string>
+    <string name="uisetting_bottom_right">右下</string>
+    <string name="uisetting_center_right">右中</string>
+    <string name="tap_instructions">点击或者长按地图</string>
+    <string name="stroke_width">Stroke Width</string>
+    <string name="width">Width</string>
+
+    <string name="fill_stroke">Fill Stroke</string>
+    <string name="fill_color">Fill Color</string>
+    <string name="properties_polyline">设置Polyline属性</string>
+    <string name="properties_polygon">设置Polygon属性</string>
+    <string name="no_demos">No demos</string>
+    <string name="map_screenshot">地图截屏</string>
+    <string name="offline_map_beijing">"北京"</string>
+    <string name="offline_map_start">"开始"</string>
+    <string name="offline_map_pause">"暂停"</string>
+
+
+    <string name="offline_map_stop">"停止"</string>
+    <string name="offline_map_remove">"删除"</string>
+    <string name="offline_map_update">"更新"</string>
+    <string name="offline_map_province">省</string>
+    <string name="offline_map_city">市</string>
+    <string name="offline_map_district">区/县</string>
+    <string name="offline_map_all_offline">所有城市</string>
+    <string name="offline_map_download_offline">下载管理</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!</string>
+
+    <string name="error_no_result">对不起，没有搜索到相关数据！</string>
+    <string name="tv_tips_nokey">未输入key，无法查询数据集！</string>
+    <string name="tv_keytip_default">您的key</string>
+    <string name="tv_tips_nodataset">当前key无对应数据集！\n可通过云存储demo创建数据后，进行查看！</string>
+
+    <string name="navi_demo_start_navigation">开始导航</string>
+    <string name="basic_navi_demo_title">导航功能</string>
+    <string name="basic_navi_demo_description">简单的导航功能代码示例</string>
+    <string name="overlay_draw_line_demo_title">手动画线</string>
+    <string name="overlay_draw_line_demo_description">手动在地图上画线功能</string>
+    <string name="list_item_title_sf_location_mode_source">地图显示定位三种模式（使用顺丰定位）</string>
+    <string name="draw_circle_to_group_points_title">画圆圈点</string>
+    <string name="draw_circle_to_group_points_description">通过在地图上画圆圈并且将圆圈里的点取出来</string>
+
+    <string name="tile_provider_demo_title">自定义瓦片图层</string>
+    <string name="tile_provider_demo_description">在地图底图上显示自定义瓦片图层</string>
+    <string name="custom_aoi_layer">自定义AOI图层</string>
+    <string name="custom_aoi_layer_description">自定义AOI图层及相关需求</string>
+    <string name="builtin_map_data">内置离线地图数据</string>
+    <string name="builtin_map_data_description">在SDK内部使用内置离线地图数据</string>
+
+    <string name="custom_aoi_image">加载图层图片</string>
+    <string name="custom_aoi_image_description">加载图层图片</string>
+    <string-array name="layers_array">
+        <item>@string/Layers_normal</item>
+        <item>@string/Layers_satellite</item>
+        <item>@string/Layers_night_mode</item>
+        <item>@string/Layers_navi_mode</item>
+        <item>@string/Layers_streetview</item>
+    </string-array>
+
+    <string-array name="name_search_types">
+        <item>POI名称关键字</item>
+        <item>POI地址关键字</item>
+    </string-array>
+    <string-array name="first_letter_search_types">
+        <item>POI名称首拼</item>
+        <item>POI地址首拼</item>
+    </string-array>
+
+</resources>

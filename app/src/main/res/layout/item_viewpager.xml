@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/button1"
+        android:text="xx样式"
+        android:textColor="#fff"
+        android:button="@null"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:drawableTop="@drawable/map_style_change_sfmap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        />
+    <RadioButton
+        android:id="@+id/button2"
+        android:text="xx样式"
+        android:button="@null"
+        android:textColor="#fff"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="#666666"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:visibility="invisible"
+        android:drawableTop="@drawable/map_style_change_sfmap"
+        />
+    <RadioButton
+        android:id="@+id/button3"
+        android:text="xx样式"
+        android:button="@null"
+        android:textColor="#fff"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="#666666"
+        android:drawableTop="@drawable/map_style_change_sfmap"
+        />
+</LinearLayout>

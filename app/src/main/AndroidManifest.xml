@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sfmap.map.demo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_default"
+        android:label="@string/demo_title"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:vmSafeMode="true">
+        <activity android:name=".offlinemap.BuiltinOfflineMapActivity"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basic.BasicMapActivity"
+            android:label="@string/list_item_title_basic_map"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.BaseMapFragmentActivity"
+            android:label="@string/list_item_title_basic_map"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.CameraActivity"
+            android:label="@string/list_item_title_camera_demo"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.EventsActivity"
+            android:label="@string/list_item_title_events"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.LayersActivity"
+            android:label="@string/list_item_title_layers"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.PoiClickActivity"
+            android:label="@string/list_item_title_poiclick"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.MapOptionActivity"
+            android:label="@string/list_item_title_mapOption"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.ScreenShotActivity"
+            android:label="@string/list_item_title_screenshot"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.HeatMapActivity"
+            android:label="@string/list_item_title_heatmap_demo"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geojson.GeojsonActivity"
+            android:label="@string/list_item_title_geojson_demo"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geojson.GeojsonSearchActivity"
+            android:label="@string/list_item_title_geojson_demo"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.ClusterActivity"
+            android:label="@string/list_item_title_cluster_demo"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.OpenglActivity"
+            android:label="@string/list_item_title_opengl"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.UiSettingsActivity"
+            android:label="@string/list_item_title_uisettings"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.MarkerActivity"
+            android:label="@string/list_item_title_marker"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.PolylineActivity"
+            android:label="@string/list_item_title_polyline"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.ArcActivity"
+            android:label="@string/list_item_title_arc"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.GroundOverlayActivity"
+            android:label="@string/list_item_title_groundoverlay"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.PolygonActivity"
+            android:label="@string/list_item_title_polygon"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.CircleActivity"
+            android:label="@string/list_item_title_circle"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.NavigateArrowOverlayActivity"
+            android:label="@string/list_item_title_navigatearrow"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".location.AmapLocationModeSourceActivity"
+            android:label="@string/list_item_title_location_mode_source"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".location.SfLocationModeSourceActivity"
+            android:label="@string/list_item_title_sf_location_mode_source"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geocoder.GeocoderActivity"
+            android:label="@string/list_item_title_geocoder"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".route.RouteActivity"
+            android:label="@string/list_item_title_route"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".busline.BuslineActivity"
+            android:label="@string/list_item_title_busline"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".poisearch.PoiKeywordSearchActivity"
+            android:label="@string/list_item_title_poikeywordsearch"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".poisearch.PoiAroundSearchActivity"
+            android:label="@string/list_item_title_poiaroundsearch"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".poisearch.LocalPoiSearchActivity"
+            android:label="@string/list_item_title_localpoisearch_name"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offlinemap.OfflineMapActivity"
+            android:label="@string/list_item_title_offlinemap"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.sfmap.map.demo.poisearch.LocalPoiLetterSearchActivity" -->
+        <!-- android:label="@string/list_item_title_localpoisearch_letter" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- /> -->
+        <activity
+            android:name=".district.DistrictWithBoundaryActivity"
+            android:label="@string/list_item_title_district_boundary"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.MapStyleActivity"
+            android:label="自定义地图样式"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cloud.CloudSaveActivity"
+            android:label="@string/list_item_title_map_cloudsave"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.sfmap.map.demo.basic.YingyanActivity" -->
+        <!-- android:label="@string/list_item_title_map_yingyan" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".cloud.CloudSearchActivity"
+            android:label="@string/list_item_title_map_cloudsave"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cloud.CloudSearchListResultActivity"
+            android:label="@string/list_item_title_map_cloudsearch"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navi.NaviActivity"
+            android:label="@string/list_item_navi_demo"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overlay.DrawLineActivity"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic.CirclePointsActivity"
+            android:screenOrientation="portrait" /> <!-- sdk key -->
+        <activity
+            android:name=".overlay.TileProviderActivity"
+            android:screenOrientation="portrait" /> <!-- 定位需要的服务 -->
+        <activity
+            android:name=".overlay.AoiLayerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".overlay.AoiImageActivity"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="com.sfmap.apikey"
+            android:value="e6713376ef2e4595982639578c55984a" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cc6bcba2822b9f3b55c66e88ba30feaa" />
+        <service android:name="com.amap.api.location.APSService" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

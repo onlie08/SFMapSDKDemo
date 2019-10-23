@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: "maven"
+
+android {
+    signingConfigs {
+        common {
+            keyAlias 'common'
+            keyPassword 'sf123456'
+            storeFile file('../keystore.jks')
+            storePassword 'sf123456'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        ndk {
+            abiFilter "armeabi" //, "armeabi", "x86" 按需设置armeabi-v7a
+        }
+        applicationId "com.sfmap.map.demo"
+        minSdkVersion 18
+        targetSdkVersion 26
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            signingConfig signingConfigs.common
+        }
+        debug {
+            signingConfig signingConfigs.common
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []  //这一行加不加都可以
+            jniLibs.srcDirs = ['libs']//这个必须加，因为我们把.so文件放在了libs文件夹中
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation files('libs/sfmap-navisdk-V1.0-20191016.aar')
+    implementation files('libs/sfmap-mapsdk-V1.0-20191017.aar')
+    implementation files('libs/sfmap-location-V1.0-20191016.aar')
+    //引入Java Topology Suite 方便相关计算
+    implementation files('libs/Msc.jar')
+    implementation 'org.locationtech.jts:jts-core:1.15.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation('com.github.bumptech.glide:glide:4.8.0') {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+}
+
+//直接将已经编译好的aar发布到公司maven库的相关配置
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file('local.properties').newDataInputStream())
+            def userName = properties.getProperty('MAVEN_USER_NAME')
+            def password = properties.getProperty('MAVEN_PWD')
+            if (!userName || !password) {
+                println 'Config your maven repository user name and password in ROOT_PROJECT/local.properties'
+            }
+
+            def uploadUrl = MAVEN_URL
+            def isSnapshot = MAVEN_UPLOAD_TYPE == 'snapshot'
+            if (isSnapshot) {
+                uploadUrl = MAVEN_URL_SNAPSHOT
+            }
+
+            repository(url: uploadUrl) {
+                authentication(userName: userName, password: password)
+            }
+
+            def versionName = SDK_VERSION_NAME
+            if (isSnapshot) {
+                versionName = SDK_VERSION_NAME_SNAPSHOT
+            }
+            pom.project {
+                version versionName
+                artifactId SDK_ARTIFACT_ID
+                groupId SDK_GROUP_ID
+                packaging SDK_TYPE
+            }
+        }
+    }
+}
+
+artifacts {
+    archives(file("libs/" + SDK_ARTIFACT_ID + "-V" + SDK_VERSION_NAME + ".aar"))
+}

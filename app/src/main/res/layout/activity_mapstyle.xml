@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sfmap.api.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.sfmap.api.maps.MapView>
+    <ImageButton
+        android:id="@+id/button"
+        android:background="@drawable/map_style_change_sfmap"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        >
+        <Button
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_style_close_normal"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="right"
+            android:background="#fff"
+            >
+            <ImageView
+                android:id="@+id/pageup"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/map_style_pageup"
+                android:visibility="invisible"
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                ></android.support.v4.view.ViewPager >
+            <ImageView
+                android:id="@+id/pagedown"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:src="@drawable/map_style_pagedown"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

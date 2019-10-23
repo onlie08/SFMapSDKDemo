@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey"> #ebebeb</color>
+    <color name="black"> #000000</color>
+    <color name="white"> #FFFFFF</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="gary">#898989</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="progress_background">#ededed</color>
+    <color name="itemlist">#f4f4f4</color>
+
+</resources>
