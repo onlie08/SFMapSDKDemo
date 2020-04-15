@@ -51,9 +51,9 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.jakewharton.timber:timber:4.7.1'
     implementation 'com.android.support:support-v4:26.1.0'
-    implementation files('libs/sfmap-navisdk-V1.0-20191016.aar')
-    implementation files('libs/sfmap-mapsdk-V1.0-20191017.aar')
-    implementation files('libs/sfmap-location-V1.0-20191016.aar')
+    implementation files('libs/sfmap-navisdk-V1.0-20191127.aar')
+    implementation files('libs/sfmap-mapsdk-V1.0-20191127.aar')
+    implementation files('libs/sfmap-locsdk-V1.0-20191127.aar')
     //引入Java Topology Suite 方便相关计算
     implementation files('libs/Msc.jar')
     implementation 'org.locationtech.jts:jts-core:1.15.1'
